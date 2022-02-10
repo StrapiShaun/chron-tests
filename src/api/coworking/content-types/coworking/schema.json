@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "coworkings",
+  "info": {
+    "singularName": "coworking",
+    "pluralName": "coworkings",
+    "displayName": "Coworking",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Office_Name": {
+      "type": "string"
+    },
+    "Phone_number": {
+      "type": "biginteger"
+    },
+    "email_address": {
+      "type": "email"
+    },
+    "private_desks": {
+      "type": "boolean"
+    },
+    "Kitchen": {
+      "type": "boolean"
+    },
+    "ExternalDisplayAvailable": {
+      "type": "boolean"
+    },
+    "AirConditioning": {
+      "type": "boolean"
+    },
+    "Lounge": {
+      "type": "boolean"
+    },
+    "LocationComponentCoworking": {
+      "type": "component",
+      "repeatable": true,
+      "component": "coworking-location-code.location-id"
+    },
+    "tea": {
+      "type": "boolean"
+    },
+    "coffee": {
+      "type": "boolean"
+    }
+  }
+}

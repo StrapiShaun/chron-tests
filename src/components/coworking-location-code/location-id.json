@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_coworking_location_code_location_ids",
+  "info": {
+    "displayName": "LocationID",
+    "icon": "map-marker-alt"
+  },
+  "options": {},
+  "attributes": {
+    "InternalLocationCode": {
+      "type": "string"
+    },
+    "GooglePlaceID": {
+      "type": "string"
+    },
+    "PhysicalAddress": {
+      "type": "richtext"
+    }
+  }
+}
