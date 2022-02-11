@@ -1,13 +1,19 @@
-const checkForNewReviews = require("./functions/checkForNewReviews");
-
 module.exports = {
-    //check for new reviews everyday at midnight
-    "0 0 * * * *": {
-        task: ({ strapi }) => {
-            checkForNewReviews();
-        },
-        options: {
-            tz:"America/Los Angeles",
-        },
-    }, 
-};
+    /**
+    * Cron job with timezone example.
+    * Everyday at 13:01 for New York City timezone.
+    * List of valid timezones: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List
+    */
+ 
+   'test': {
+     task: ({ strapi }) => {
+           const now = new Date().toISOString();
+           console.log(now + ' Every 10');
+       },
+     options: {
+        rule: '0 15 13 * * *',
+        tz: 'America/New_York',
+     },
+   },
+ };
+  
