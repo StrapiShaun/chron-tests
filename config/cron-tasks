@@ -5,15 +5,12 @@ module.exports = {
     * List of valid timezones: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List
     */
  
-   'test': {
-     task: ({ strapi }) => {
-           const now = new Date().toISOString();
-           console.log(now + ' Every 10');
-       },
+   test: {
+     task: ({ strapi }) => {const now = new Date().toISOString()
+        console.log(now + ' Every 10') },
      options: {
-        rule: '0 15 13 * * *',
+        rule: '0 19 11 * * *',
         tz: 'America/New_York',
      },
    },
  };
-  

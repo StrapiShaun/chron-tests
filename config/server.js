@@ -1,4 +1,5 @@
 
+
 const cronTasks = require("./cron-tasks");
 
 module.exports = ({ env }) => ({
@@ -12,5 +13,23 @@ module.exports = ({ env }) => ({
     tasks: cronTasks, 
     
       },
+
+
+    
+    /*'myJob': {
+      task: ({ strapi }) => {const now = new Date().toISOString()
+        console.log(now + ' Every 10') },
+      options: { 
+        rule: '* 2 * * * *',
+        tz: 'America/New York',
+      }
+    },*/
+ 
+    
+    
+    
+  
+      
+      
 
 });
